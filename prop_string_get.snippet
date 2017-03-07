@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>prop_string_get</Title>
+			<Shortcut>psg</Shortcut>
+			<Description>Code snippet for an automatically implemented string property
+Language Version: C# 3.0 or higher</Description>
+			<Author>Alex Winder</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>property</ID>
+					<ToolTip>Property name</ToolTip>
+					<Default>MyProperty</Default>
+				</Literal>
+				<Literal>
+					<ID>modifier</ID>
+					<ToolTip>Set modifier</ToolTip>
+					<Default>private</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public string $property$ { get; $modifier$ set; }
+			$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
